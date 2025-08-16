@@ -1,0 +1,240 @@
+.about-hero {
+    position: relative;
+    background: url('about-hero.png') center/cover no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.about-hero .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); 
+}
+
+.about-hero .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.about-hero .btn {
+    background: #81BFDA;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.about-hero .btn:hover {
+    background: #fada7a;
+    color: #81BFDA;
+}
+
+.about-intro {
+  padding: 60px 20px;
+  background: #F5F0CD;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.about-card,
+.founder-card {
+    margin-bottom: 30px;
+}
+
+
+.about-intro,
+.team,
+.mission-vision {
+    padding: 30px 20px;   
+}
+
+.about-intro h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.about-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    align-items: stretch;
+    justify-content: center; 
+    gap: 30px; 
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 1100px;
+    margin: 0 auto 50px; 
+    padding: 20px;
+}
+
+.about-card .about-text {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    text-align: left;
+    padding: 20px;
+}
+
+.about-card .about-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.team {
+  margin-top: 0px;
+  padding: 10px 20px;
+  background: #f5f0cd;
+  text-align: center;
+}
+
+.team h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.founder-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 20px;
+}
+
+.founder-card img {
+  width: 100%;
+  height: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.founder-info {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.founder-info blockquote {
+  font-style: italic;
+  color: #2C3E50;
+  margin-top: 10px;
+}
+
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+.team-member {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.role {
+  font-size: 18px;
+  color: #fada7a;
+  margin-bottom: 10px;
+}
+
+.mission-vision {
+  background: #f5f0cd;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mission-vision h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mission-vision-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-card .about-text {
+    text-align: center;
+  }
+
+  .about-card .about-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;   
+  }
+
+  .about-card .about-image img {
+    width: 90%;    
+    height: auto; 
+  }
+}
+
